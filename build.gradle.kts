@@ -51,5 +51,11 @@ detekt {
             enabled = true                                // Enable/Disable XML report (default: true)
             destination = file("build/reports/detekt.xml") // Path where XML report will be stored (default: `build/reports/detekt/detekt.xml`)
         }
+        html {
+          enabled = false
+        }
+        txt {
+          enabled = false
+        }
     }
 }
