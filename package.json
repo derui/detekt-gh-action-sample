@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "danger": "^10.5.4"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^3.17.5"
   }
 }
