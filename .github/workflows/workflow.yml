@@ -37,3 +37,5 @@ jobs:
     - run: chmod a+x ./gradlew
     - run: ./gradlew detektMain
     - run: yarn danger ci
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
