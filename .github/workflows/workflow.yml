@@ -39,3 +39,8 @@ jobs:
     - run: yarn danger ci
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v2
+      with:
+        name: detekt-report
+        path: build/reports/detekt.html

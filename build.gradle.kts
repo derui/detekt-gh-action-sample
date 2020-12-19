@@ -48,11 +48,12 @@ detekt {
     ignoreFailures = true
     reports {
         xml {
-            enabled = true                                // Enable/Disable XML report (default: true)
-            destination = file("build/reports/detekt.xml") // Path where XML report will be stored (default: `build/reports/detekt/detekt.xml`)
+            enabled = true
+            destination = file("build/reports/detekt.xml")
         }
         html {
-          enabled = false
+          enabled = true
+          destination = file("build/reports/detekt.html")
         }
         txt {
           enabled = false
