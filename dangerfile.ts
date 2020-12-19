@@ -65,4 +65,4 @@ const counts: string[] = Object.entries(SEVERITY).reduce((value, [k,v]) => {
   return value.concat(`- \`${k} --> ${count}\``);
 }, []);
 
-message("Results of analysis by detekt are...: \n" + counts.join("\n"))
+message("Results of analysis by detekt are...\n" + counts.join("\n"))
